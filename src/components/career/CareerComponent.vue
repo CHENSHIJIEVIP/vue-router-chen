@@ -1,16 +1,17 @@
 <template>
 	<div class="career">
-		this is career component!		
+		<h1>this is career component!</h1>	
+		<p>{{msg}}</p>
 	</div>
 </template>
 <script>
-	/*export default{
+	export default{
 		name:'Career',
 		data(){
 			return{
 				msg:'welcome to your Home.vue'
 			}
 		}
-	}*/
+	}
 </script>
 <style></style>

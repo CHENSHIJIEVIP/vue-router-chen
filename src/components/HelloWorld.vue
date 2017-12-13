@@ -97,7 +97,8 @@ li {
 } */
 
 .nav{
-  border: 1px solid #35495e;
+  /*border: 1px solid #35495e;*/
+  background-color: #35495e;
   text-align: center;
   height: 30px;
   line-height: 30px;
@@ -109,15 +110,22 @@ a{
   text-decoration: none;
   display: inline-block;
   width: 100px;
-  height: 28px;
 }
 
 a:hover { 
   background-color: #b9b9b9; 
 }
 
-.class_a{
-  background-color: #b9b9b9;
+h1{
+    color: red;
+    font-size: 24px;
+}
+
+.content{
+  background-color: #e6e6e6;
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 </style>

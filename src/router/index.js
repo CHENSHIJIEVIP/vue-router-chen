@@ -7,23 +7,68 @@ import VueComponent from '@/components/vue/VueComponent'
 import Es6Component from '@/components/es6/es6Component'
 import CareerComponent from '@/components/career/careerComponent'
 
+import HomeOne from '@/components/home/one/One'
+import HomeTwo from '@/components/home/two/Two'
+import HomeThree from '@/components/home/three/Three'
+
+import OneOh from '@/components/home/one/oh/Oh'
+import OneMy from '@/components/home/one/my/My'
+import OneGod from '@/components/home/one/god/God'
+
 /*import VueComponent from '@components/vue/VueComponent'
 import Es6Component from '@components/es6/Es6Component'
 import CareerComponent from '@components/career/CareerComponent'*/
 
 Vue.use(Router)
-
 export default new Router({
+	mode: 'history',
 	routes:[
 		{
 			path: '/',
 			name: 'HelloWorld',
 			// component: HelloWorld
+			redirect:'/vue'
 		},
 		{
 			path: '/home',
 			name: 'Home',
-			component: Home
+			component: Home,
+			redirect:'/home/one',
+			children:[
+				{
+					path:'one',
+					name:'One',
+					component:HomeOne,
+					redirect:'/home/one/god',
+					children:[
+						{
+							path:'oh',
+							name:'Oh',
+							component:OneOh
+						},
+						{
+							path:'my',
+							name:'My',
+							component:OneMy
+						},
+						{
+							path:'god',
+							name:'God',
+							component:OneGod,
+						}
+					]
+				},
+				{
+					path:'two',
+					name:'Two',
+					component:HomeTwo
+				},
+				{
+					path:'three',
+					name:'Three',
+					component:HomeThree
+				}
+			]
 		},
 		{
 			path:'/vue',
