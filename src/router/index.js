@@ -27,7 +27,7 @@ export default new Router({
 			path: '/',
 			name: 'HelloWorld',
 			// component: HelloWorld
-			redirect:'/vue'
+			redirect:'/home'
 		},
 		{
 			path: '/home',
@@ -39,7 +39,7 @@ export default new Router({
 					path:'one',
 					name:'One',
 					component:HomeOne,
-					redirect:'/home/one/god',
+					redirect:'/home/one/oh',
 					children:[
 						{
 							path:'oh',

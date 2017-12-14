@@ -123,7 +123,7 @@ h1{
 
 .content{
   background-color: #e6e6e6;
-  width: 1000px;
+  max-width: 1000px;
   height: 300px;
   margin: 0 auto;
 }
