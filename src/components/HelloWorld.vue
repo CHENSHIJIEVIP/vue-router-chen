@@ -96,7 +96,7 @@ li {
   margin: 0 10px;
 } */
 
-.nav{
+.hello .nav{
   /*border: 1px solid #35495e;*/
   background-color: #35495e;
   text-align: center;
@@ -104,7 +104,7 @@ li {
   line-height: 30px;
 }
 
-a{
+.hello .nav a{
   color: #42b983;
   transition: 0.5s;
   text-decoration: none;
@@ -112,16 +112,17 @@ a{
   width: 100px;
 }
 
-a:hover { 
+.hello .nav a:hover { 
   background-color: #b9b9b9; 
+  color: #35495e;
 }
 
-h1{
+.hello h1{
     color: red;
     font-size: 24px;
-}
+} 
 
-.content{
+.hello .content{
   background-color: #e6e6e6;
   max-width: 1000px;
   height: 300px;

@@ -66,6 +66,7 @@
 	width: 100px;
 	display: inline-block;
 	color: #fff;
+	text-decoration: none;
 }
 
 .home .navBox ul li a:hover { 
