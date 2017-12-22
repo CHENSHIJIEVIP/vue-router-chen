@@ -42,6 +42,11 @@
 		border-bottom: 1px solid #fff;
 	}
 
+	.one .oneNav p:hover { 
+	  	background-color: #b9b9b9; 
+	  	color: #35495e;
+	}
+
 	.one .oneBox{
 		background-color: yellow;
 		width: 90%;

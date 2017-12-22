@@ -2,15 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
+/*一级路由*/
 import Home from '@/components/home/Home'
 import VueComponent from '@/components/vue/VueComponent'
 import Es6Component from '@/components/es6/es6Component'
 import CareerComponent from '@/components/career/careerComponent'
 
+/*二级路由*/
 import HomeOne from '@/components/home/one/One'
 import HomeTwo from '@/components/home/two/Two'
 import HomeThree from '@/components/home/three/Three'
 
+/*三级路由*/
 import OneOh from '@/components/home/one/oh/Oh'
 import OneMy from '@/components/home/one/my/My'
 import OneGod from '@/components/home/one/god/God'
